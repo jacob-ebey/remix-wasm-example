@@ -1,6 +1,6 @@
-# Remix + Cloudflare Workers + DO + Turborepo
+# Remix + WASM
 
-A starter to get you up and going with Remix on Cloudflare with all the latest and greatest.
+A starter to get you up and going with WASM in Remix.
 
 ## What's inside?
 
@@ -8,12 +8,9 @@ This repo uses [npm](https://www.npmjs.com/) as a package manager. It includes t
 
 ### Packages
 
-- `packages/chat-room-do`: a Durable Object for chat rooms
-- `packages/counter-do`: a Durable Object for counting things
-- `packages/rate-limiter-do`: a Durable Object for limiting clients
 - `packages/remix-app`: a [Remix](https://remix.run/) application that makes up the public facing UX
-- `packages/worker`: a Cloudflare Worker that brings everything together for deployment
-- `config/cloudflare-env`: type definitions for bindings shared across the packages
+- `packages/rust-fibonacci`: a [Rust](https://www.rust-lang.org/) library for calculating Fibonacci numbers
+- `packages/server`: an ESM Node.js server that brings everything together for deployment
 - `config/eslint-config-custom`: shared eslint config that includes `@remix-run/eslint-config` and `prettier`
 - `config/tsconfig`: base tsconfig that other packages inherit from
 

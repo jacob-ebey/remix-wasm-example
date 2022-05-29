@@ -6,7 +6,6 @@
   "compilerOptions": {
     "target": "ES2019",
     "lib": ["dom", "dom.iterable", "esnext"],
-    "types": ["@cloudflare/workers-types", "cloudflare-env"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
