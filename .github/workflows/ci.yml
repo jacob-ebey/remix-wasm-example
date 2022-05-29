@@ -38,11 +38,17 @@ jobs:
         with:
           node-version: 16.7.0
 
+      - name: ⎔ Setup wasm-pack
+        uses: jetli/wasm-pack-action@v0.3.0
+
       - name: 📥 Install turbo
         run: npm install -g turbo
 
       - name: 📥 Download deps
         uses: bahmutov/npm-install@v1
+
+      - name: 🔨 Build
+        run: npm run build
 
       - name: 🔎 Type check
         run: npm run typecheck
