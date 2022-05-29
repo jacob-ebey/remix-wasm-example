@@ -1,0 +1,10 @@
+[package]
+edition = "2021"
+name = "rust-fibonacci"
+version = "0.1.0"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+wasm-bindgen = "0.2"
